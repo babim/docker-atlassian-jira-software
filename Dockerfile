@@ -4,7 +4,7 @@ FROM openjdk:8-alpine
 ENV SOFT		jira
 ENV SOFTSUB		software
 ENV OPENJDKV		8
-ENV JIRA_VERSION	7.2.1
+ENV JIRA_VERSION	7.2.10
 ENV JIRA_HOME		/var/atlassian/${SOFT}
 ENV JIRA_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${JIRA_HOME}
