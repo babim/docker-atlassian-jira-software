@@ -38,7 +38,7 @@ EXPOSE 8080 8443
 # Set volume mount points for installation and home directory. Changes to the
 # home directory needs to be persisted as well as parts of the installation
 # directory due to eg. logs.
-VOLUME ["${SOFT_HOME}", "${SOFT_INSTALL}/logs"]
+VOLUME ["${SOFT_HOME}", "${SOFT_INSTALL}"]
 
 # Set the default working directory as the installation directory.
 WORKDIR ${SOFT_HOME}
