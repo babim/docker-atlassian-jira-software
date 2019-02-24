@@ -1,9 +1,9 @@
-# Atlassian JIRA Core in a Docker container
+# Atlassian JIRA Software in a Docker container
 ## (Thanks Martin Aksel Jensen cptactionhank)
 
 ## Get me started
 
-To quickly get started running a JIRA Core instance, use the following command:
+To quickly get started running a JIRA Software instance, use the following command:
 ```bash
 docker run --detach --publish 8080:8080 babim/jira-software:fixed
 ```
