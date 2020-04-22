@@ -12,7 +12,7 @@ ENV SOFT_INSTALL	${JIRA_INSTALL}
 ENV SOFT_VERSION	${JIRA_VERSION}
 
 # download option
-RUN apk add --no-cache curl bash && \
+RUN apt-get update && apt-get install curl bash && \
 	curl -s https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20SCRIPT%20AUTO/option.sh -o /option.sh && \
 	chmod 755 /option.sh
 
