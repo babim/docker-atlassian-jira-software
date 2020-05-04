@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:debian-slim
+FROM openjdk:11
 
 # Configuration variables.
 ENV SOFT		jira
