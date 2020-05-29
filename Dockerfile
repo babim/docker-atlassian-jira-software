@@ -1,4 +1,4 @@
-FROM openjdk:8-alpine
+FROM adoptopenjdk/openjdk8:alpine
 
 # Configuration variables.
 ENV SOFT		jira
