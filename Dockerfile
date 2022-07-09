@@ -3,7 +3,7 @@ FROM adoptopenjdk/openjdk11:debian-slim
 # Configuration variables.
 ENV SOFT		jira
 ENV SOFTSUB		software
-ENV OPENJDKV		8
+ENV OPENJDKV		11
 ENV JIRA_VERSION	9.0.0
 ENV JIRA_HOME		/var/atlassian/${SOFT}
 ENV JIRA_INSTALL	/opt/atlassian/${SOFT}
