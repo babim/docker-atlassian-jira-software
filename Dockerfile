@@ -1,4 +1,5 @@
-FROM adoptopenjdk/openjdk11:debian-slim
+#FROM adoptopenjdk/openjdk11:debian-slim
+FROM eclipse-temurin:11
 
 # Configuration variables.
 ENV SOFT		jira
