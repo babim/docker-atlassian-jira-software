@@ -1,10 +1,10 @@
-FROM adoptopenjdk/openjdk8:alpine
+FROM eclipse-temurin:17-alpine
 
 # Configuration variables.
-ENV SOFT		jira
-ENV SOFTSUB		software
-ENV OPENJDKV		8
-ENV JIRA_VERSION	9.7.1
+ENV SOFT			jira
+ENV SOFTSUB			software
+ENV OPENJDKV		17
+ENV JIRA_VERSION	10.0.1
 ENV JIRA_HOME		/var/atlassian/${SOFT}
 ENV JIRA_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${JIRA_HOME}
