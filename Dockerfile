@@ -1,11 +1,11 @@
 #FROM adoptopenjdk/openjdk11:debian-slim
-FROM eclipse-temurin:11
+FROM eclipse-temurin:17-noble
 
 # Configuration variables.
-ENV SOFT		jira
-ENV SOFTSUB		software
-ENV OPENJDKV		11
-ENV JIRA_VERSION	9.7.1
+ENV SOFT			jira
+ENV SOFTSUB			software
+ENV OPENJDKV		17
+ENV JIRA_VERSION	10.0.1
 ENV JIRA_HOME		/var/atlassian/${SOFT}
 ENV JIRA_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${JIRA_HOME}
