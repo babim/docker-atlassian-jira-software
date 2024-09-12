@@ -1,11 +1,11 @@
 #FROM adoptopenjdk/openjdk11:debian-slim
-FROM eclipse-temurin:11
+FROM eclipse-temurin:21-noble
 
 # Configuration variables.
-ENV SOFT		jira
-ENV SOFTSUB		software
-ENV OPENJDKV		11
-ENV JIRA_VERSION	9.7.1
+ENV SOFT			jira
+ENV SOFTSUB			software
+ENV OPENJDKV		21
+ENV JIRA_VERSION	10.0.1
 ENV JIRA_HOME		/var/atlassian/${SOFT}
 ENV JIRA_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${JIRA_HOME}
@@ -45,7 +45,8 @@ VOLUME ["${SOFT_HOME}", "${SOFT_INSTALL}"]
 # Set the default working directory as the installation directory.
 WORKDIR ${SOFT_HOME}
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["/docker-entrypoint.sh"]
+ENTRYPOINT ["/usr/bin/tini", "--"]
 
 # Run Atlassian as a foreground process by default.
 #CMD ["/opt/atlassian/jira/bin/start-jira.sh", "-fg"]
