@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-noble
 ENV SOFT			jira
 ENV SOFTSUB			software
 ENV OPENJDKV		21
-ENV JIRA_VERSION	9.17.2
+ENV JIRA_VERSION	11.3.1
 ENV JIRA_HOME		/var/atlassian/${SOFT}
 ENV JIRA_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${JIRA_HOME}
