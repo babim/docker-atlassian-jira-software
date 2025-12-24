@@ -29,6 +29,11 @@ RUN curl -s https://raw.githubusercontent.com/babim/docker-tag-options/master/z%
 # prepare visible code
 RUN mkdir -p /etc-start && mv ${SOFT_INSTALL} /etc-start/${SOFT}
 
+# Add Tini
+#ENV TINI_VERSION=v0.19.0
+#ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
+#RUN chmod +x /usr/bin/tini
+exit
 # Use the default unprivileged account. This could be considered bad practice
 # on systems where multiple processes end up being executed by 'daemon' but
 # here we only ever run one process anyway.
